@@ -1,0 +1,21 @@
+# Case Study Data
+println("Case Study ANOR MultiHosp")
+
+nT = 150   # number of time intervals
+nRH = 15  # number of receiving hospitals
+# nPT = 9		# number of patient types
+nVT =  2  # number of vehicle types
+nEH = 2		# number of evacuating hospitals
+
+L=6
+
+threatRisk =[0.002 0.002 0.002 0.002 0.001 0.001 0.001 0.001 0.001 ]
+
+travelRisk =[0.001 0.001 0.001 0.0001 0.0001 0.0001 0.00005 0.00005 0.00005 ;
+	           0.002	0.002 0.002 	0.0002 	0.0002 0.0002 0.00005 0.00005 0.00005; ]
+
+W =[32 1 1 1 180 14 41 9 21;
+		40 0 1 1 104 19 41 9 17;]
+
+C =[1,2]
+N=[20, 20]

@@ -1,0 +1,37 @@
+# Case Study Data
+println("Case Study ANOR")
+
+recHos =[ # raw data: oneway travel time (intervals), beds available 1(AdCC) 2(ED) 3(PedCC) 4(ISO) 5(MS-II) 6(Ors) 7(MS-I) 8(Ped) 9(Psy)
+8	7	10	2	0	30	5	11	3	0	;
+7	2	8	0	2	18	3	7	0	0	;
+4	0	15	0	2	9	2	3	0	0	;
+9	1	5	0	0	6	2	2	0	0	;
+6	2	10	0	2	1	0	1	5	17	;
+3	0	0	0	0	0	0	0	0	6	;
+14	1	16	0	12	7	6	3	2	7	;
+3	11	18	0	13	26	8	9	1	0	;
+11	74	81	0	10	172	9	58	0	0	;
+8	18	0	0	15	125	9	42	0	16	;
+6	2	31	0	4	8	7	3	1	0	;
+8	1	44	0	6	17	2	6	8	0	;
+10	0	5	0	2	18	3	7	0	0	;
+2	5	0	0	0	11	0	4	0	2	;
+9	8	0	0	11	24	8	9	16	39]
+
+
+nT = 200   # number of time intervals
+nRH = 15  # number of receiving hospitals
+nPT = 9		# number of Patient types
+nVT =  2  # number of vehicle types
+
+L=6		# number of loading lanes
+
+threatRisk =[0.002 0.002 0.002 0.002 0.001 0.001 0.001 0.001 0.001 ]
+
+travelRisk =[0.001 0.001 0.001 0.0001 0.0001 0.0001 0.00005 0.00005 0.00005 ;
+	           0.002	0.002 0.002 	0.0002 	0.0002 0.0002 0.00005 0.00005 0.00005; ]
+
+W =[72, 1, 2, 1, 286, 34, 96, 19, 37]		# Number of patients of each type
+
+C =[1,2]			# Capacity of each type of vehicle
+N=[20, 20]		# Number of vehicles of each type

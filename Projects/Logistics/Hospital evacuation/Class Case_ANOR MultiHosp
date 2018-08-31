@@ -1,0 +1,39 @@
+# Case Study Data
+println("Case Study ANOR MultiHosp")
+
+recHos =[ # raw data: oneway travel time (intervals) H1, h2, beds available 1(AdCC) 2(ED) 3(PedCC) 4(ISO) 5(MS-II) 6(Ors) 7(MS-I) 8(Ped) 9(Psy)
+8	 6 7	10	2	0	30	5	11	3	0	;
+7	 5 2	8	0	2	18	3	7	0	0	;
+4	 2 0	15	0	2	9	2	3	0	0	;
+9	7 1	5	0	0	6	2	2	0	0	;
+6	8 2	10	0	2	1	0	1	5	17	;
+3	 5 0	0	0	0	0	0	0	0	6	;
+14	12 1	16	0	12	7	6	3	2	7	;
+3	 5 11	18	0	13	26	8	9	1	0	;
+11	9 74	81	0	10	172	9	58	0	0	;
+8	6 18	0	0	15	125	9	42	0	16	;
+6	 6 2	31	0	4	8	7	3	1	0	;
+8	6 1	44	0	6	17	2	6	8	0	;
+10 8	0	5	0	2	18	3	7	0	0	;
+2	4 5	0	0	0	11	0	4	0	2	;
+9	11 8	0	0	11	24	8	9	16	39]
+
+
+nT = 150   # number of time intervals
+nRH = 15  # number of receiving hospitals
+nPT = 9		# number of patient types
+nVT =  2  # number of vehicle types
+nEH = 2		# number of evacuating hospitals
+
+L=6
+
+threatRisk =[0.002 0.002 0.002 0.002 0.001 0.001 0.001 0.001 0.001 ]
+
+travelRisk =[0.001 0.001 0.001 0.0001 0.0001 0.0001 0.00005 0.00005 0.00005 ;
+	           0.002	0.002 0.002 	0.0002 	0.0002 0.0002 0.00005 0.00005 0.00005; ]
+
+W =[32 1 1 1 180 14 41 9 21;
+		40 0 1 1 104 19 41 9 17;]
+
+C =[1,2]
+N=[20, 20]
