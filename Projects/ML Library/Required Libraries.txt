@@ -1,0 +1,19 @@
+Required libraries:
+
+scipy
+sklearn
+python-docx
+numpy
+h5py
+pandas
+matplotlib
+keras
+rpy2
+statsmodels
+tensorly
+
+R libraries required:
+Required to install R version >= 3.3.0
+mlbench
+lattice
+cubist
