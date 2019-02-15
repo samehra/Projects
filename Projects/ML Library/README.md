@@ -71,6 +71,7 @@ In this case, the lambda candidates would be integers 0 to 10
 After this process, the training will begin.
 
 4.	Kriging
+
 This model will ask for the kernel will be used. There are four basic kernels available and the user could combine these kernels if needed.
 Example: 
 Choose kernel: 1.RBF 2.ExpSineSquared 3.RationalQuadratic 4.WhiteKernel:1
@@ -100,6 +101,7 @@ In this case the kernel is RBF + ExpSineSquared * RationalQuadratic
 After this process, the training will begin.
 
 6.	Logistic Regression
+
 This model will ask to choose between l1 norm and l2 norm. Then, it will ask for the maximum value of lambda (max_lambda) and number of lambda evenly distributed from 0 to max_lambda. In this model the lambda is the inverse of regularization strength, and smaller values specify stronger regularization.
 Example:
 Please choose the norm used in the penalization:(1)l1 norm (2)l2 norm:1
@@ -109,12 +111,15 @@ Please select the number of tuning parameters evenly distributed among the valid
 After this process, the training will begin.
 
 7.	MTL-Lasso
+
 Same with Lasso.
 
 8.	Conv Nets
+
 This model has been primarily built for image classification. It asks for image datasets of train and test image separately and then creates the training and test datasets. The model parameters has currently been kept fixed and since a random set of parameters could really effect the run time. Certain range for parameters and model enhancements might be added later.
 
 9.	Time Series
+
 This model will ask for the number of future data the user would like to predict, and the maximum lag value (max_lambda). Then the program will train the model with lag values from 1 to lambda and find the optimized lag value.
 Example:
 Please input the number of future data need to be predicted:7
@@ -125,7 +130,8 @@ After this process, the training will begin.
 No user input apart from model selection. The model automatically computes the appropriate partition using the error metric below.
  
 III. Report Output
-	After training the user need to type in the folder name which will be used to store relative images and report. If the folder does not exist, the program will create one automatically.
+
+After training the user need to type in the folder name which will be used to store relative images and report. If the folder does not exist, the program will create one automatically.
 Example:
 	Please type in the folder name: TestFolder
 In this case the report and images will be stored in the folder called TestFolder in current path.
